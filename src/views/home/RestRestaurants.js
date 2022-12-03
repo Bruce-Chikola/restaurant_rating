@@ -14,7 +14,8 @@ export default function RestRestaurants() {
                         (
                             restaurantList.map(restaurant =>
                                 <OtherCard
-                                    key={`{restaurant.attributes.id${Math.random() * 2201}}`}
+                                    id={restaurant.id}
+                                    key={`{restaurant.id${Math.random() * 2201}}`}
                                     name={restaurant.attributes.name}
                                     logo={restaurantLogos.Logo()}
                                 />

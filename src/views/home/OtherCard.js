@@ -1,10 +1,10 @@
 import React from 'react'
-
-export default function OtherCard({ logo, name }) {
+import { Link } from 'react-router-dom'
+export default function OtherCard({ logo, name, id }) {
     return (
-        <div className='other-card w-full flex flex-col items-center justify-center'>
+        <Link to={`ratingInfo/${id}`} className='other-card w-full flex flex-col items-center justify-center' style={{ textDecoration: 'none' }}>
             <img className='other-card-img' src={`img/${logo}`} />
             <h4>{name}</h4>
-        </div>
+        </Link>
     )
 }

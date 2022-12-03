@@ -1,0 +1,8 @@
+.footer {
+    background-color: #0b2239;
+    min-height: 300px;
+}
+
+.footer-content-wrapper {
+    border-top: 1px rgb(200, 199, 199) solid;
+}

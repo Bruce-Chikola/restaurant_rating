@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800;900&display=swap');
+
+:root {
+    --text-color: #0b2239;
+}
+
+body {
+    color: var(--text-color);
+    font-family: 'Nunito', sans-serif;
+}
+
+.header {
+    z-index: 2;
+    left: 0;
+}
+
+.header-title {
+    height: 40px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 40px;
+    color: white;
+}
+
+.search-wrapper {
+    background-color: rgb(255, 255, 255, 20%);
+    border-radius: 10px;
+    padding-left: 15px;
+}
+
+.search {
+    text-align: left;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.search::placeholder {
+    color: white;
+}

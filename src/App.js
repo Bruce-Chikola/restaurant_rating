@@ -11,11 +11,8 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/ratingInfo" element={<RatingInfo />} />
-          <Route path="/ratingInfo" element={<RatingInfo />} >
-            <Route path=":restaurant" />
-          </Route>
+          <Route path="/" element={<Home />} index />
+          <Route path="/ratingInfo/:restaurant" element={<RatingInfo />} />
         </Routes>
       </BrowserRouter >
     </Provider>

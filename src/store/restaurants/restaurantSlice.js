@@ -13,9 +13,6 @@ export const restaurantSlice = createSlice({
         },
         setSelectedRestaurant: (state, action) => {
             state.selectedRestaurant = action.payload
-        },
-        generateRandomIcon: () => {
-            return
         }
     }
 })
